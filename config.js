@@ -10,7 +10,25 @@ var config = {
   subtitle: "",
   byline:
     "Syed Miftah Zeya, Majk Shkurti, Enock Seth Nyamodar, Alexandros Theofanidis (Technical University of Vienna, 2021)",
-  footer: `Text Source: <a href="https://www.mometrix.com/academy/cartography-and-technology" target="_blank">Technological Advancements in Cartography</a> , <a target="_blank" href="https://www.dailymail.co.uk/home/moslive/article-1272921/Ten-greatest-maps-changed-world.html#ixzz0nZOHfXJV">Ten of the greatest: Maps that changed the world</a>`,
+  footer: `Text Source: <a href="https://www.mometrix.com/academy/cartography-and-technology" target="_blank">Technological Advancements in Cartography</a> , <a target="_blank" href="https://www.dailymail.co.uk/home/moslive/article-1272921/Ten-greatest-maps-changed-world.html#ixzz0nZOHfXJV">Ten of the greatest: Maps that changed the world</a> 
+           <br>
+            Image Sources:
+            <a href="https://images.practicaladultinsights.com/map-with-compass.jpg" target="_blank">Introduction</a>, 
+            <a href="https://www.oldest.org/wp-content/uploads/2018/08/Babylonian-Map-of-the-World-221x300.jpg" target="_blank">Babylonian</a>,
+            <a href="https://img.index.hu/imgfrm/9/2/2/0/MED_0015629220.jpg" target="_blank">Ptolemy</a>,
+            <a href="https://upload.wikimedia.org/wikipedia/commons/b/b2/Mercator_1569.png" target="_blank">Mercator 1569 </a>,
+            <a href="https://miro.medium.com/max/5350/1*JRh5HjQpQKBjrcmAl9YISg.jpeg" target="_blank">London Tube</a>,
+
+            <a href="https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/
+                amp_metadata_content_image_min_696px_wide/public/buriganga
+                _river_0.jpg?itok=qSKMc7x0" target="_blank">Google Map</a>,
+
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJU3T-0Rgm23lFlvB9UXtEgeLPQrmmowV0FIVJJqZwNLKg5r1ZahgfcviCouDJe1kCyZo&usqp=CAU" target="_blank">Modern Cartography</a>,
+
+  
+            
+  
+  `,
   chapters: [
     {
       id: "intro-id",
