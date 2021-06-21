@@ -1,14 +1,13 @@
 var config = {
-  style: "mapbox://styles/mapbox/streets-v11",
+  style: "mapbox://styles/majk/ckq5n66mc0wpa17oiq2fl2i48",
   accessToken:
     "pk.eyJ1IjoibWFqayIsImEiOiJjazkyeWJnM2kwYmZsM25tczV3bjdqbnN2In0.IJ1PxolSiosSbsSioBZ7oQ",
-  showMarkers: true,
+  showMarkers: false,
   markerColor: "#3FB1CE",
   theme: "dark",
   use3dTerrain: false,
   title: "From Stones to GIS: Mapping Through the Ages",
-  subtitle:
-    "This story map gives an insight into how cartography has evolved over time.",
+  subtitle: "",
   byline:
     "Syed Miftah Zeya, Majk Shkurti, Enock Seth Nyamodar, Alexandros Theofanidis (Technical University of Vienna, 2021)",
   footer: `Text Source: <a href="https://www.mometrix.com/academy/cartography-and-technology" target="_blank">Technological Advancements in Cartography</a> , <a target="_blank" href="https://www.dailymail.co.uk/home/moslive/article-1272921/Ten-greatest-maps-changed-world.html#ixzz0nZOHfXJV">Ten of the greatest: Maps that changed the world</a>`,
@@ -18,40 +17,45 @@ var config = {
       alignment: "left",
       hidden: false,
       title: "Introduction",
-      image: "./images/Claudius Ptolemy.jpeg",
+      style: "mapbox://styles/majk/ckq5n66mc0wpa17oiq2fl2i48",
+      image: "./images/01_introduction.jpg",
       description: `
-    <audio controls>
-    <source src="./audio/1.Introduction.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>    
-    Cartography is the science of mapmaking. As technology has improved, so has the science of mapmaking. Originally, all maps were hand-made, which meant that each map would differ from other maps even of the same area because a different person was making the map. There would be similarities, of course, but not exact correspondence. The invention of the compass improved mapmaking, but it wasn’t until the invention of the printing press that maps were able to become uniform. The same map could be copied over and over again because of the printing press. The combination of the telescope and astronomy allowed mapmakers to determine their latitude which helped improve mapmaking. Finally, with the advent of satellite, GPS combined with computer software made highly detailed and accurate maps possible. This story map gives an insight into how cartography has evolved over time.`,
+      <audio controls id="intro-id-audio">
+         <source src="./audio/1.Introduction.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio> `,
       location: {
-        center: [-122.418398, 37.759483],
-        zoom: 8.5,
-        pitch: 60,
         bearing: 0,
+        center: [16.373819, 48.208176],
+        zoom: 1.5,
+        pitch: 0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
     },
     {
       id: "babylonian-map-id",
       alignment: "right",
       hidden: false,
       title: "Babylonian Map of the World (500 BC-700 BC)",
+      style: "mapbox://styles/majk/ckq5wbhoa66t117p8x0kgvrwt",
       image: "./images/babylon_map.jpg",
       description: `
-            <audio controls>
-    <source src="./audio/2.Babylonian_map.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>    
-        More commonly known as the Babylonian Map of the World, the Imago Mundi is considered the oldest surviving world map. It is currently on display at the British Museum in London.  `,
+      <audio controls id="babylonian-map-id-audio">
+         <source src="./audio/2.Babylonian_map.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+        <br>`,
       location: {
-        center: [-77.020636, 38.8869],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: -43.2,
+        duration: 6000,
+        center: [44.361488, 33.312805],
+        bearing: 90,
+        zoom: 10,
+        speed: 0.6,
+        pitch: 0,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -63,19 +67,22 @@ var config = {
       id: "ptolemy-map-id",
       alignment: "left",
       hidden: false,
+      style: "mapbox://styles/majk/ckq57ttxl5j0817p8jxe7ioqt",
       title: "Ptolemy's World Map (15th Century)",
-      image: "./images/Claudius Ptolemy.jpeg",
+      image: "./images/PtolemyWorldMap.jpeg",
       description: `
-    <audio controls>
-    <source src="./audio/3.Ptolemy_map.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>    
-    The Ptolemy world map is a map of the world known to Greco-Roman society in the 2nd century. It is based on the description contained in Ptolemy's book Geography, written c. 150. Based on an inscription in several of the earliest surviving manuscripts, it is traditionally credited to Agathodaemon of Alexandria. `,
+      <audio controls id="ptolemy-map-id-audio">
+         <source src="./audio/3.Ptolemy_map.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+    <br>    
+    `,
       location: {
-        center: [-122.418398, 37.759483],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: 0,
+        bearing: 60,
+        center: [29.89254, 31.19773],
+        zoom: 10,
+        speed: 0.6,
+        pitch: 40,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -99,18 +106,21 @@ var config = {
       alignment: "right",
       hidden: false,
       title: "Mercator 1569 World Map (16th Century)",
+      style: "mapbox://styles/majk/ckq5u9mh6875i18rlqsb07rpu",
       image: "./images/Mercator_1569 map.png",
       description: `
-            <audio controls>
-    <source src="./audio/4.Mercator_map.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>    
-        The title shows that Gerardus Mercator aimed to present contemporary knowledge of the geography of the world and at the same time 'correct' the chart to be more useful to sailors. The map is inscribed with a great deal of text. `,
+      <audio controls id="mercator-1569-map-id-audio">
+         <source src="./audio/4.Mercator_map.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+    <br>    
+       `,
       location: {
-        center: [-77.020636, 38.8869],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: -43.2,
+        bearing: 90,
+        center: [4.29012, 51.127369],
+        zoom: 10,
+        pitch: 10,
+        speed: 0.6,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -124,39 +134,47 @@ var config = {
       hidden: false,
       title: "London Tube Map (1933)",
       image: "./images/london tube map.jpeg",
+      style: "mapbox://styles/majk/ckq5ungdz6psf17n6aaj9mkoe",
       description: `
-    <audio controls>
-    <source src="./audio/5.London_tube_map.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>   
-        Dismissed as too 'revolutionary' when it was first submitted in 1931, Harry Beck's Underground map solved the problem of how to represent clearly and elegantly a dense, complex interweaving of train lines.`,
+      <audio controls id="london-tube-map-id-audio">
+         <source src="./audio/5.London_tube_map.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+    <br>   
+       `,
       location: {
-        center: [-122.418398, 37.759483],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: 0,
+        bearing: 45,
+        center: [-0.118092, 51.509865],
+        zoom: 10,
+        pitch: 10,
+        speed: 0.5,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
     },
     {
       id: "google-map-id",
       alignment: "right",
       hidden: false,
       title: "Google Maps (2005)",
+      style: "mapbox://styles/mapbox/streets-v11",
       image: "./images/google_earth.jpeg",
       description: `
-            <audio controls>
-    <source src="./audio/6.Google_maps.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br> 
-        Google Maps presents a world in which the area of most concern to you can be at the centre, and which - with mapped content overlaid - can contain whatever you think is important. Almost for the first time, the ability to create an accurate map has been placed in the hands of everyone, and it has transformed the way we view the world.`,
+      <audio controls id="google-map-id-audio">
+         <source src="./audio/6.Google_maps.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+    <br> 
+      `,
       location: {
-        center: [-77.020636, 38.8869],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: -43.2,
+        bearing: 40,
+        center: [-122.083855, 37.386051],
+        zoom: 10,
+        pitch: 10,
+        speed: 0.6,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
@@ -170,22 +188,25 @@ var config = {
       hidden: false,
       title: "Modern Cartography",
       image: "./images/modern_carto.jpg",
+      style: "mapbox://styles/parallel/cjznv5kw822ae1cljb3t8dnoa",
       description: `
-    <audio controls>
-    <source src="./audio/7.Modern_cartography.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio> <br>
-    Today’s cartography tools have taken mapmaking to new heights, mostly in terms of detail and accuracy, but sometimes quite literally. Mapmaking can employ a huge variety of methods and tools. Here we'll cover a few of the most common tools: aerial photography, sensors, GPS, satellites, and GIS.
+      <audio controls id="modern-cartography-id-audio">
+         <source src="./audio/7.Modern_cartography.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+    <br>
     `,
       location: {
-        center: [-122.418398, 37.759483],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: 0,
+        bearing: 90,
+        center: [-91.15363, 39.54825],
+        zoom: 10,
+        pitch: 40,
       },
       mapAnimation: "flyTo",
       rotateAnimation: false,
       callback: "",
+      onChapterEnter: [],
+      onChapterExit: [],
     },
   ],
 };
