@@ -9,7 +9,7 @@ var config = {
   title: "From Stones to GIS: Mapping Through the Ages",
   subtitle: "",
   byline:
-    "Syed Miftah Zeya, Majk Shkurti, Enock Seth Nyamodar, Alexandros Theofanidis (Technical University of Vienna, 2021)",
+    "Syed Miftah Zeya, Majk Shkurti, Enock Seth Nyamador, Alexandros Theofanidis (Technical University of Vienna, 2021)",
   footer: `Text Source: <a href="https://www.mometrix.com/academy/cartography-and-technology" target="_blank">Technological Advancements in Cartography</a> , <a target="_blank" href="https://www.dailymail.co.uk/home/moslive/article-1272921/Ten-greatest-maps-changed-world.html#ixzz0nZOHfXJV">Ten of the greatest: Maps that changed the world</a> 
            <br>
             Image Sources:
